@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="review name"
+        android:id="@+id/review_name_tv"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space"
+        android:layout_above="@+id/loadRecipe_reivew"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@id/review_name_tv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/review_image_iv"
+                android:scaleType="fitCenter"
+                android:padding="4dp"
+                android:src="@drawable/napkin_orange"
+                android:layout_below="@+id/review_name_tv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="time"
+                android:id="@+id/review_time_tv"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Review Ingredients"
+                android:id="@+id/review_ingredients_tv"
+                android:padding="2dp"
+                android:background="@drawable/abc_inactive_tab" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="you have"
+                    android:layout_weight="1"
+                    android:id="@+id/review_youHave_tv"
+                    android:padding="2dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="you need"
+                    android:layout_weight="1"
+                    android:id="@+id/review_youNeed_tv"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25px"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/space2"
+                android:layout_above="@+id/space" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/dismisDialog"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/abc_ab_share_pack_mtrl_alpha"
+            android:layout_marginEnd="35dp"
+            android:layout_alignTop="@+id/loadRecipe_reivew"
+            android:layout_toStartOf="@+id/review_name_tv" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Instructions"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:translationZ="6dp"
+            android:padding="4dp"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:id="@+id/loadRecipe_reivew"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+</RelativeLayout>

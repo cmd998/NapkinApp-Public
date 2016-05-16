@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="allergies_title">Allergies</string>
+    <string name="allergies_summary">What are your allergies?</string>
+    <string name="allergies_dialog">Select your allergies</string>
+    <string-array name="allergy_selections">
+        <item>Dairy</item>
+        <item>Egg</item>
+        <item>Fish</item>
+        <item>Gluten</item>
+        <item>Peanut</item>
+        <item>Shellfish</item>
+        <item>Soy</item>
+        <item>Tree Nuts</item>
+        <item>Wheat</item>
+    </string-array>
+    <string-array name="empty_array">No allergies selected</string-array>
+    <string name="vibrate_title">Vibrate</string>
+
+    <!-- constant Strings to save recipe details in RecipeDetails class (Andrey) -->
+    <string name="saved_recipe_file">saved_recipe</string>
+    <string name="recipe_name">recipe_name</string>
+    <string name="recipe_API">recipe_API</string>
+    <string name="recipe_time">recipe_time</string>
+    <string name="recipe_ingr">recipe_ingredient</string>
+    <string name="recipe_ID">recipe_ID</string>
+    <string name="recipe_URL">recipe_URL</string>
+    <!-- -->
+
+
+</resources>

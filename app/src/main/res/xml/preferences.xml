@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Settings">
+
+        <MultiSelectListPreference
+            android:key='allergy_key'
+            android:title="@string/allergies_title"
+            android:summary="@string/allergies_summary"
+            android:dialogTitle="@string/allergies_dialog"
+            android:entries="@array/allergy_selections"
+            android:entryValues="@array/allergy_selections"
+            android:defaultValue="@array/empty_array"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

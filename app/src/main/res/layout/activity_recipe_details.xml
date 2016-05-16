@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorBg"
+    tools:context="edu.sfsu.napkin.activity.RecipeDetails"
+    android:id="@+id/activity_recipe_details">
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/wine_icon" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/wine_icon"
+        android:elevation="8dp"
+        android:translationZ="4dp"
+        android:src="@drawable/wine_icon"
+        android:layout_alignEnd="@+id/webView" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space4"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/wine_icon"
+        android:layout_alignBottom="@+id/wine_icon" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/details_timer_iv"
+        android:src="@drawable/stopwatch"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/details_time_tv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:id="@+id/details_time_tv"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/space4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rage Quit"
+        android:onClick="checkGPS"
+        android:id="@+id/rage_quit_button"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/btnText"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/details_timer_iv" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepthree_iv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/stepthree" />
+
+</RelativeLayout>

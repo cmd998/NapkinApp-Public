@@ -1,0 +1,2 @@
+include ':app', ':volley', ':picasso-2.5.2'
+project(':volley').projectDir = new File('app/libs/volley')

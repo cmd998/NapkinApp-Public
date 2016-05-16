@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:napkin="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home_action"
+        android:title="Home"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/ingredient_action"
+        android:title="Ingredients"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/settings_action"
+        android:title="Allergies"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/tutorial_action"
+        android:title="Need help?"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/about_action"
+        android:title="About"
+        napkin:showAsAction="never"/>
+
+    <!--<item android:id="@+id/rage_quit_test_action"-->
+          <!--android:title="Rage Quit Test"-->
+          <!--napkin:showAsAction="never"/>-->
+</menu>

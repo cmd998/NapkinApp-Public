@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp" >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/drink_image_iv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/wine_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/drink_name_tv"
+        android:layout_below="@+id/drink_vintage_tv"
+        android:layout_toEndOf="@+id/drink_image_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vintage"
+        android:id="@+id/drink_vintage_tv"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/drink_image_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winery"
+        android:id="@+id/drink_winery_tv"
+        android:layout_below="@+id/drink_name_tv"
+        android:layout_toEndOf="@+id/drink_image_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Varietal"
+        android:id="@+id/drink_varietal_tv"
+        android:layout_below="@+id/drink_winery_tv"
+        android:layout_toEndOf="@+id/drink_image_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:id="@+id/drink_type"
+        android:layout_marginLeft="4dp"
+        android:layout_alignTop="@+id/drink_varietal_tv"
+        android:layout_toEndOf="@+id/drink_varietal_tv" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:elevation="2dp"
+        android:translationZ="6dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:id="@+id/dismiss_drinkdialog"
+        android:textColor="@color/btnText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/drink_image_iv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/dismiss_drinkdialog">
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shhh...it's a secret."
+        android:id="@+id/drink_description_scrollView"
+        android:layout_below="@+id/drink_image_iv"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="9dp" />
+</RelativeLayout>

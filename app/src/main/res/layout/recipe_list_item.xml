@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/AntiqueWhite"
+    android:backgroundTintMode="src_atop"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/recipe_list_item_image"
+        android:src="@drawable/napkin_orange"
+        android:layout_below="@+id/recipe_list_item_name"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/matchedIngrTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:id="@+id/recipe_list_item_name"
+        android:layout_marginRight="45dp"
+        android:textSize="25dp"
+        android:textColor="@color/color_carrot"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/recipe_list_item_clock"
+        android:src="@drawable/stopwatch"
+        android:layout_alignTop="@+id/recipe_list_item_image"
+        android:layout_toEndOf="@+id/matchedIngrTV"
+        android:layout_marginStart="21dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:id="@+id/recipe_list_item_time"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:layout_alignBottom="@+id/recipe_list_item_clock"
+        android:layout_toEndOf="@+id/recipe_list_item_clock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matched: "
+        android:id="@+id/matchedIngrTV"
+        android:layout_alignBottom="@+id/recipe_list_item_clock"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:layout_width="50px"
+        android:layout_height="40px"
+        android:layout_below="@+id/recipe_list_item_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space3" />
+
+
+</RelativeLayout>

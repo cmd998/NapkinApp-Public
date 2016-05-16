@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "edu.sfsu.napkin.activity.Home"/>
+      <point      
+        x = "1324"      
+        y = "332"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "edu.sfsu.napkin.activity.Splash"/>
+      <point      
+        x = "212"      
+        y = "260"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "edu.sfsu.napkin.activity.IngredientInput"/>
+      <point      
+        x = "2504"      
+        y = "316"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "edu.sfsu.napkin.activity.RecipeList"/>
+      <point      
+        x = "3584"      
+        y = "304"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:napkin="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="edu.sfsu.napkin.activity.RecipeDetails">
+
+    <item android:id="@+id/home_action"
+        android:title="Home"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/ingredient_action"
+        android:title="Ingredients"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/settings_action"
+        android:title="Allergies"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/tutorial_action"
+        android:title="Need help?"
+        napkin:showAsAction="never"/>
+
+    <item android:id="@+id/about_action"
+        android:title="About"
+        napkin:showAsAction="never"/>
+</menu>

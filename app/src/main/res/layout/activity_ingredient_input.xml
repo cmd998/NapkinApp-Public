@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.sfsu.napkin.activity.IngredientInput">
+
+    <AutoCompleteTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ingrAutoComplete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Click to add ingredient (ex. pasta)"
+        android:layout_marginTop="58dp"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which Ingredients do you have?"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    -->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:divider="@color/colorBg"
+        android:dividerHeight="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/ingrAutoComplete"
+        android:layout_above="@+id/ingrDoneButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use these ingredients"
+        android:elevation="2dp"
+        android:id="@+id/ingrDoneButton"
+        android:onClick="ingrInputDone"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/btnText"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What ingredients do you have?"
+        android:id="@+id/review_large_tv"
+        android:layout_alignBottom="@+id/stepone_iv"
+        android:layout_toEndOf="@+id/stepone_iv" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepone_iv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/stepone" />
+
+</RelativeLayout>
